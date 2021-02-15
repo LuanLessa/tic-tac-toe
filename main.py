@@ -146,7 +146,7 @@ def move2():  # Make the move for the player 1
             print("Wrong coordinates, try again")
 
 
-def check():
+def check():  # Check if has a winner
     global start
     global tie
     if (p[0] == "X" and p[1] == "X" and p[2] == "X") or (p[0] == "X" and p[3] == "X" and p[6] == "X"):
@@ -181,7 +181,7 @@ def check():
         start = False
 
 
-while start:
+while start:  # main game loop
     board()
     move1()
     board()
